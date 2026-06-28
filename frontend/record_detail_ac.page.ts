@@ -29,7 +29,7 @@ addPage(new NamedPage('record_detail', async () => {
                     </div>
                     <div style="
                         position: absolute;
-                        top: 70%;
+                        top: 60%;
                         left: 50%;
                         transform: translateX(-50%);
                         background: rgba(0, 0, 0, 0.15);
