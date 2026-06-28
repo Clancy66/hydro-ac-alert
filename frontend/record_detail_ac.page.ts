@@ -18,7 +18,7 @@ addPage(new NamedPage('record_detail', async () => {
                         top: 30%;
                         left: 50%;
                         transform: translateX(-50%);
-                        background: rgba(0, 0, 0, 0.15);
+                        background: rgba(0, 0, 0, 0.25);
                         padding: 10px 16px;
                         border-radius: 12px;
                         color: #fff;
@@ -32,7 +32,7 @@ addPage(new NamedPage('record_detail', async () => {
                         top: 60%;
                         left: 50%;
                         transform: translateX(-50%);
-                        background: rgba(0, 0, 0, 0.15);
+                        background: rgba(0, 0, 0, 0.25);
                         padding: 10px 16px;
                         border-radius: 12px;
                         color: #fff;
