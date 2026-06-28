@@ -2,7 +2,7 @@ import { addPage, NamedPage, Socket } from '@hydrooj/ui-default';
 import Swal from 'sweetalert2';
 
 addPage(new NamedPage(['problem_detail', 'homework_detail_problem', 'contest_detail_problem'], async () => {
-    let imageUrl = '/ac1.png';
+    let imageUrl = '/ac.jpg';
     if (UiContext.acImgUrl) imageUrl = UiContext.acImgUrl;
     const showCongrats = (result, firstAC) => Swal.fire({
             html: `

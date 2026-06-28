@@ -14,7 +14,7 @@ export function apply(ctx: Context) {
         that.UiContext.rdoc = that.response.body.rdoc;
     });
     ctx.on('handler/after/ProblemDetail#get', async (that) => {
-        const userAcImg = await db.collection('bag').findOne({uid: that.udoc._id, type: 6, loaded: true});
+        const userAcImg = await db.collection('bag').findOne({uid: that.psdoc._id, type: 6, loaded: true});
 
         if (userAcImg) {
             const img = await db.collection('goods').findOne({_id: userAcImg.goodsId});
