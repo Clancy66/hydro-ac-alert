@@ -2,7 +2,7 @@ import { addPage, NamedPage, Socket } from '@hydrooj/ui-default';
 import Swal from 'sweetalert2';
 
 addPage(new NamedPage('record_detail', async () => {
-    let imageUrl = '/ac.jpg';
+    let imageUrl = '/ac-default.png';
     if (UiContext.acImgUrl) imageUrl = UiContext.acImgUrl;
     const showCongrats = (result, firstAC) => Swal.fire({
             html: `
