@@ -64,7 +64,6 @@ addPage(new NamedPage(['problem_detail', 'homework_detail_problem', 'contest_det
         const rid = rdoc._id.toString();
         const prev = prevStatus.get(rid);
 
-        if (rdoc.contest && !UiContext.showInContest) return;
         if (rdoc.contest && rdoc.contest.toString() === '000000000000000000000000') return;
         if (rdoc.status === 1 && prev !== 1 && rdoc.uid === UserContext._id) {
             const result = {};
