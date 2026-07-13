@@ -75,7 +75,7 @@ addPage(new NamedPage(['problem_detail', 'homework_detail_problem', 'contest_det
                 result['峰值内存'] = (rdoc.memory / 1024).toFixed(2) + ' MiB';
             }
 
-            checkFirstACAndShow(rdoc.uid, domainId + rdoc.pid + '-' + rid).then(firstAC => {
+            checkFirstACAndShow(rdoc.uid, domainId + rdoc.pid).then(firstAC => {
                 showCongrats(result, firstAC);
             });
 
