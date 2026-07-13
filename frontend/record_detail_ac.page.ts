@@ -79,7 +79,7 @@ addPage(new NamedPage('record_detail', async () => {
                 result[dt.textContent.trim()] = dds[i]?.textContent.trim();
             });
 
-            checkFirstACAndShow(rdoc.uid, domainId + rdoc.pid).then(firstAC => {
+            checkFirstACAndShow(rdoc.uid, domainId + rdoc.pid + '-' + rid).then(firstAC => {
                 showCongrats(result, firstAC);
             });
         }
