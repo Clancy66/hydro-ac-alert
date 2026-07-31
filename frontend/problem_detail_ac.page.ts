@@ -67,7 +67,7 @@ addPage(new NamedPage(['problem_detail', 'homework_detail_problem', 'contest_det
         if (rdoc.contest && rdoc.contest.toString() === '000000000000000000000000') return;
         if (rdoc.status === 1 && prev !== 1 && rdoc.uid === UserContext._id) {
             const result = {};
-            result['峰值时间'] = (rdoc.time / 1000).toFixed(0) + ' ms';
+            result['峰值时间'] = (rdoc.time).toFixed(0) + ' ms';
             if (rdoc.memory < 1024) {
                 result['峰值内存'] = (rdoc.memory).toFixed(2) + ' KiB';
             }
